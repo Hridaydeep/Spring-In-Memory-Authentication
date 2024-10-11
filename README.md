@@ -57,9 +57,3 @@ Two users are configured in this application:
   - Password: `password1`
 
 These credentials are stored in memory and are not persisted across restarts.
-
-## How to Run the Application
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-repo/spring-security-inmemory.git
