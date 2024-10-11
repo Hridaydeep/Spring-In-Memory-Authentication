@@ -57,3 +57,18 @@ Two users are configured in this application:
   - Password: `password1`
 
 These credentials are stored in memory and are not persisted across restarts.
+
+## When to Use In-Memory Authentication
+
+- **Prototyping**: If you need to quickly test security features in your application without having a persistent user store.
+- **Small Internal Tools**: Perfect for simple, internal applications where persistent user data is unnecessary.
+- **Unit Testing**: For automated tests where a full authentication mechanism is not needed, in-memory authentication can simplify test setup.
+
+## When Not to Use In-Memory Authentication
+
+- **Production Environments**: Since data is not persisted and passwords may not be hashed, this method is insecure and unsuitable for production.
+- **Large Applications**: If your application requires handling many users or sophisticated authentication methods, you should use a more robust solution like database-backed authentication, LDAP, or OAuth2.
+
+## Conclusion
+
+In-memory authentication is a great tool for getting started quickly with Spring Security. While it is simple and useful for small or testing environments, it is not suited for large-scale or production applications. For real-world scenarios, it is recommended to integrate Spring Security with external authentication providers, such as databases, LDAP, or OAuth services.
